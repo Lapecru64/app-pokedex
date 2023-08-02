@@ -44,21 +44,6 @@ body {
     background-color: black;
   }
 
-  /* Media query para dispositivos móviles */
-@media (max-width: 767px) {
-  .pokemon-card {
-    width: 40vw;
-    height: 30vh;
-  }
-}
-
-/* Media query para pantallas de escritorio */
-@media (min-width: 768px) {
-  .pokemon-card {
-    width: 15vw;
-    height: 40vh;
-  }
-}
   
   /* Estilos para la página /pokedex */
   .pokedex-body {
@@ -194,15 +179,15 @@ body {
     margin-top: 1rem;
   }
   
-  /* Estilo para los botones de paginación */
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
   
+  /* Estilo para los botones de paginación */
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+
   .pagination button {
-    margin: 0 0.3rem;
+    margin: 0.3rem;
     padding: 0.5rem 1rem;
     background-color: blue;
     color: white;
@@ -210,9 +195,32 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   .pagination button.active {
     background-color: darkblue;
   }
+
+
+  @media screen and (max-width: 767px) {
+    .pokemon-card {
+      width: 80vw; /* Ajustar el ancho de las tarjetas en dispositivos móviles */
+      height: 30vh; /* Ajustar la altura de las tarjetas en dispositivos móviles */
+    }
+  
+    .pokedex-title {
+      top: 1.5rem; /* Ajustar la posición del título de la página en dispositivos móviles */
+    }
+  }
+  
+
+/* Estilos para pantallas más grandes (por ejemplo, PC) */
+@media (min-width: 769px) {
+  .pokemon-card {
+    width: 15vw;
+    height: 40vh;
+  }
+}
+
+
   
   
