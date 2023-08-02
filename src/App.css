@@ -43,6 +43,22 @@ body {
   .line--black {
     background-color: black;
   }
+
+  /* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  .pokemon-card {
+    width: 40vw;
+    height: 30vh;
+  }
+}
+
+/* Media query para pantallas de escritorio */
+@media (min-width: 768px) {
+  .pokemon-card {
+    width: 15vw;
+    height: 40vh;
+  }
+}
   
   /* Estilos para la página /pokedex */
   .pokedex-body {
