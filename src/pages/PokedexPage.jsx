@@ -13,7 +13,7 @@ const PokedexPage = () => {
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 12;
+  const cardsPerPage = 6;
 
   useEffect(() => {
     fetchPokemons();
